@@ -8,7 +8,7 @@ export const AppBackground = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1rem;
-    background-color: var(--primary);
+    background-color: var(--appBackground);
 `;
 
 export const LayoutContainer = styled.div`
@@ -20,15 +20,35 @@ export const LayoutContainer = styled.div`
 `;
 
 export const LayoutNavbarContainer = styled.div`
-    position: sticky;
+    position: fixed;
     width: 100%;
-    padding: 1rem;
-    border-radius: 1rem 1rem 0 0;
-    background-color: rgba(10, 47, 255, 0.4);
 `;
 
 export const LayoutContentContainer = styled.div`
     height: 100%;
-    padding: 2rem;
+    padding: 6rem 2rem 4rem 2rem;
+    overflow: auto;
+    scroll-behavior: auto;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+/*    
+    ::-webkit-scrollbar-track {
+        background: var(--primary);
+        margin: 1rem 0;
+    }
+
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--brighter);
+        border-radius: .5rem;
+    }
+
+     
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--white);
+    } */
 `;
 

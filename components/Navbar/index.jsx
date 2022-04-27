@@ -1,10 +1,21 @@
 import React from 'react';
 
+//styles
+import { NavbarContainer, NavbarTitle, NavbarButtons, NavbarLink } from './navbarElements';
+
 const Navbar = () => {
     return ( 
-        <div>
-            <h1>navbar</h1>
-        </div>
+        <NavbarContainer>
+            <NavbarTitle>
+                <h1>Franco Brumatti</h1>
+            </NavbarTitle>
+            <NavbarButtons>
+                <NavbarLink>Inicio</NavbarLink>
+                <NavbarLink>Sobre Mi</NavbarLink>
+                <NavbarLink>Skills</NavbarLink>
+                <NavbarLink>Contacto</NavbarLink>
+            </NavbarButtons>
+        </NavbarContainer>
     );
 }
  

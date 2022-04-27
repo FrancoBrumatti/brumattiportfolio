@@ -5,19 +5,24 @@ import { AppBackground, LayoutContainer, LayoutNavbarContainer, LayoutContentCon
 
 //components
 import Navbar from '../Navbar';
+import SvgBackground from '../SvgBackground';
 
 const Layout = (props) => {
     return (
-        <AppBackground>
-            <LayoutContainer>
-                <LayoutNavbarContainer>
-                    <Navbar />
-                </LayoutNavbarContainer>
-                <LayoutContentContainer>
-                    {props.children}
-                </LayoutContentContainer>
-            </LayoutContainer> 
-        </AppBackground>
+        <>
+            <SvgBackground />
+            <AppBackground>
+                <LayoutContainer>
+                    <LayoutNavbarContainer>
+                        <Navbar />
+                    </LayoutNavbarContainer>
+                    <LayoutContentContainer>
+                        {props.children}
+                    </LayoutContentContainer>
+                </LayoutContainer> 
+            </AppBackground>
+        </>
+            
     );
 }
  

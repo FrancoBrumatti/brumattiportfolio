@@ -2,19 +2,23 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     :root {
-        --primary: #8b616f;
-        --secondary: #91c1b4;
-        --darker: #5d2c1f;
-        --brighter: #f3e6ba;
-        --background: #361424;
-        --black: #18070f;
-        --white: #f3efe0;
+        --primary: #4527a0;
+        --secondary: #3D2645;
+        --darker: #80283e;
+        --brighter: #7953d2;
+        --background: #00C9A7;
+        --appBackground: #FBEAFF;
+        --navbar: rgba(0, 0, 112, 0.85);
+        --navbarDarker: rgba(0, 0, 112, 0.92);
+        --black: #000000;
+        --white: #e0e2f3;
         --fontprimary: 'Roboto', sans-serif;
         --fontsecondary: 'Barlow', sans-serif;
     } 
 
     body {
         background-color: var(--background);
+        font-family: var(--fontprimary);
     }
 
     //css reset
@@ -31,8 +35,8 @@ export default createGlobalStyle`
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     }
-    input, button, textarea, select {
-    font: inherit;
+    a, input, button, textarea, select {
+        font: inherit;
     }
 `;
  
