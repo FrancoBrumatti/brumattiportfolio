@@ -7,7 +7,6 @@ export const AppBackground = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 1rem;
     background-color: var(--appBackground);
 `;
 

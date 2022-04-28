@@ -6,7 +6,6 @@ export const NavbarContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    border-radius: 1rem 1rem 0 0;
     border-bottom: 2px solid var(--primary);
     background: radial-gradient(circle, rgba(69,39,160,0.95) 15%, rgba(46,26,107,0.9) 100%);
 
