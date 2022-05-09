@@ -12,7 +12,7 @@ export const AppBackground = styled.div`
 
 export const LayoutContainer = styled.div`
     position: relative;
-    height: 100%;
+    height: 100vh;
 
     display: flex;
     flex-direction:column ;
@@ -25,7 +25,7 @@ export const LayoutNavbarContainer = styled.div`
 
 export const LayoutContentContainer = styled.div`
     height: 100%;
-    padding: 6rem 2rem 4rem 2rem;
+    padding: 1rem;
     overflow: auto;
     scroll-behavior: auto;
 

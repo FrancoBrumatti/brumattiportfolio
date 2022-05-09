@@ -1,41 +1,14 @@
 import React from 'react';
 
-import { motion } from 'framer-motion';
-
-//styles
-import { BackgroundSvg } from './svgBackgroundElements';
+import { SvgBg } from './SvgBackgroundElements';
 
 const SvgBackground = () => {
     return ( 
-        <BackgroundSvg>
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnsSvgjs="http://svgjs.com/svgjs" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560">
-                <rect width="1440" height="560" x="0" y="0" fill="#0e2a47"></rect>
-                <motion.path
-                initial={{
-                  scale: 1,
-                  opacity: 1
-                }}
-                transition={{ repeat: Infinity, duration: 3, repeatType: 'mirror' }}
-                animate={{
-                  scale: 1.2,
-                  opacity: 0.8
-                }}
-                 d="M 0,66 C 57.6,91.6 172.8,199 288,194 C 403.2,189 460.8,37 576,41 C 691.2,45 748.8,195.4 864,214 C 979.2,232.6 1036.8,144 1152,134 C 1267.2,124 1382.4,158 1440,164L1440 560L0 560z" fill="#184a7e"></motion.path>
-                <motion.path
-                initial={{
-                  scale: 1,
-                  opacity: 0.8
-                }}
-                transition={{ repeat: Infinity, duration: 5, repeatType: 'mirror' }}
-                animate={{
-                  scale: 1.5,
-                  opacity: 1
-                }}
-                 d="M 0,454 C 96,436 288,350.4 480,364 C 672,377.6 768,531.2 960,522 C 1152,512.8 1344,358.8 1440,318L1440 560L0 560z" fill="#2264ab"></motion.path>
-        </svg>
-            
-        </BackgroundSvg>
-     );
+        <SvgBg width="100%" height="100%" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+            <path d="M427,1108C429.16666666666674,1211.9913541443275,324.25,1407.7851787042484,222.50000000000003,1443.7595264191646C120.75000000000004,1479.7338741340807,-92.53175706238663,1374.8060073593572,-183.49999999999991,1323.8460862894965C-274.4682429376132,1272.8861652196358,-329.4761242923463,1203.369456932874,-323.30945762567967,1138C-317.14279095901304,1072.630543067126,-235.30157627094673,984.6607777667184,-146.50000000000017,931.6293446922518C-57.6984237290536,878.5979116177853,113.91666666666637,790.4162923352421,209.49999999999974,819.8114015532002C305.08333333333314,849.2065107711583,424.83333333333326,1004.0086458556726,427,1108C429.16666666666674,1211.9913541443275,324.25,1407.7851787042484,222.50000000000003,1443.7595264191646" fill="#4527a0"/>
+        </SvgBg>
+        
+    );
 }
  
 export default SvgBackground;

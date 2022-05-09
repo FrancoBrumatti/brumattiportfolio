@@ -1,46 +1,10 @@
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
+import Home from "../components/Home";
 
-export default function Home() {
+export default function App() {
   return (
     <Layout>
-      <h1>Franco Brumatti</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <Home />
     </Layout>
   )
 }

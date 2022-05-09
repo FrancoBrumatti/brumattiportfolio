@@ -1,28 +1,23 @@
 import React from 'react';
 
 //styles
-import { AppBackground, LayoutContainer, LayoutNavbarContainer, LayoutContentContainer } from './layoutElements';
+import { LayoutContainer, LayoutContentContainer } from './layoutElements';
 
 //components
-import Navbar from '../Navbar';
+import Navbar from '../Layout/Navbar';
 import SvgBackground from '../SvgBackground';
 
 const Layout = (props) => {
     return (
         <>
-            <SvgBackground />
-            <AppBackground>
                 <LayoutContainer>
-                    <LayoutNavbarContainer>
-                        <Navbar />
-                    </LayoutNavbarContainer>
+                    {/* <SvgBackground /> */}
+                    <Navbar />
                     <LayoutContentContainer>
                         {props.children}
                     </LayoutContentContainer>
                 </LayoutContainer> 
-            </AppBackground>
-        </>
-            
+        </>  
     );
 }
  
