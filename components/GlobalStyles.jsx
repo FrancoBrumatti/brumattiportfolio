@@ -7,7 +7,7 @@ export default createGlobalStyle`
         --darker: #80283e;
         --brighter: #7953d2;
         --background: #1e193b;
-        --appBackground: #FBEAFF;
+        --brighterSpan: #9f81e6;
         --navbar: rgba(0, 0, 112, 0.85);
         --navbarDarker: rgba(0, 0, 112, 0.92);
         --black: #000000;

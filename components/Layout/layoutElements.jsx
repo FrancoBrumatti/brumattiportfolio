@@ -25,7 +25,6 @@ export const LayoutNavbarContainer = styled.div`
 
 export const LayoutContentContainer = styled.div`
     height: 100%;
-    padding: 1rem;
     overflow: auto;
     scroll-behavior: auto;
 
