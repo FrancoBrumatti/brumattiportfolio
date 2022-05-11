@@ -1,22 +1,44 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import { homeData } from '../../data/homeData';
 
 import { HomeLayout, HomeInfo, HomeCVButton, HomeDescription, HomeProyectsDisplayLayout, HomeProyectsDisplay, HomeProyect } from './homeElements';
 
 const Home = () => {
+
+    const { homeinfo } = homeData;
+    const { homeprojects } = homeData;
+
+    console.log(homeprojects)
+
     return ( 
         <HomeLayout>
             <HomeInfo>
-                <img src="/homeImg.jpg" alt="profile photo" />
-                <h1>Web Developer</h1>
-                <HomeCVButton>Curriculum Vitae</HomeCVButton>
-                <HomeDescription>Soy <span>Franco Brumatti</span>, un web developer de formacion <span>autodidacta</span>. Busco desafios para seguir aprendiendo continuamente, Lorem ipsum dolor sit amet.</HomeDescription>
-                <HomeDescription>Portfolio relizado 100% por mi.</HomeDescription>
+                <img src={homeinfo.infoprofileimage} alt="profile photo" />
+                <h1>{homeinfo.infotitle}</h1>
+                <HomeCVButton>{homeinfo.infobutton}</HomeCVButton>
+                <HomeDescription>{homeinfo.infodescription}</HomeDescription>
+                <HomeDescription>{homeinfo.infodescription2}</HomeDescription>
             </HomeInfo>
             <HomeProyectsDisplayLayout>
-                <h1>Mis Proyectos</h1>
+                <h1>{homeprojects.projectstitle}</h1>
                 <HomeProyectsDisplay>
+                    <motion.div
+                        initial={{
+                            scale: 1,
+                            borderRadius: '1rem',
+                        }}
+                        whileHover={{
+                            scale: 1.05,
+                            boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
+                        }}
+                        transition= {{ duration: .8 }}
+                    >
+                        <HomeProyect image={homeprojects.projects[0].projectimage}>
+                            <h2>{homeprojects.projects[0].projecttitle}</h2>
+                        </HomeProyect>
+                    </motion.div>
 
                     <motion.div
                         initial={{
@@ -29,8 +51,8 @@ const Home = () => {
                         }}
                         transition= {{ duration: .8 }}
                     >
-                        <HomeProyect>
-                            <h2>Titulo del proyecto</h2>
+                        <HomeProyect image={homeprojects.projects[0].projectimage}>
+                            <h2>{homeprojects.projects[0].projecttitle}</h2>
                         </HomeProyect>
                     </motion.div>
 

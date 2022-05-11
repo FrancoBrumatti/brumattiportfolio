@@ -114,7 +114,8 @@ export const HomeProyect = styled.div`
     width: 17.5rem;
     height: 22.5rem;
     border-radius: 1rem;
-    background-image: linear-gradient(0deg, rgba(29,22,38,1) 0%, rgba(0,0,0,0) 100%), url('/fotoproyecto.jpg');
+    
+    background-image: linear-gradient(0deg, rgba(29,22,38,1) 0%, rgba(0,0,0,0) 100%), url(${props => props.image});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
