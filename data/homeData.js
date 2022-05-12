@@ -12,7 +12,14 @@ export const homeData = {
             {
                 "projectid": 0,
                 "projecttitle": "Titulo del proyecto",
-                "projectimage": "/fotoproyecto.jpg"
+                "projectimage": "/fotoproyecto.jpg",
+                "projecturl": "buscadorimagenesproject.netlify.app"
+            },
+            {
+                "projectid": 1,
+                "projecttitle": "Titulo del proyecto",
+                "projectimage": "/fotoproyecto.jpg",
+                "projecturl": "buscadorimagenesproject.netlify.app"
             }
         ]
     }

@@ -1,8 +1,10 @@
 import React from 'react';
-
 import { motion } from 'framer-motion';
+
+//data
 import { homeData } from '../../data/homeData';
 
+//styles
 import { HomeLayout, HomeInfo, HomeCVButton, HomeDescription, HomeProyectsDisplayLayout, HomeProyectsDisplay, HomeProyect } from './homeElements';
 
 const Home = () => {
@@ -24,6 +26,7 @@ const Home = () => {
             <HomeProyectsDisplayLayout>
                 <h1>{homeprojects.projectstitle}</h1>
                 <HomeProyectsDisplay>
+                    {homeprojects.projects.map(project => 
                     <motion.div
                         initial={{
                             scale: 1,
@@ -35,27 +38,11 @@ const Home = () => {
                         }}
                         transition= {{ duration: .8 }}
                     >
-                        <HomeProyect image={homeprojects.projects[0].projectimage}>
-                            <h2>{homeprojects.projects[0].projecttitle}</h2>
+                        <HomeProyect image={project.projectimage}>
+                            <h2>{project.projecttitle}</h2>
                         </HomeProyect>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{
-                            scale: 1,
-                            borderRadius: '1rem',
-                        }}
-                        whileHover={{
-                            scale: 1.05,
-                            boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
-                        }}
-                        transition= {{ duration: .8 }}
-                    >
-                        <HomeProyect image={homeprojects.projects[0].projectimage}>
-                            <h2>{homeprojects.projects[0].projecttitle}</h2>
-                        </HomeProyect>
-                    </motion.div>
-
+                    </motion.div>    
+                    )}
                 </HomeProyectsDisplay>
             </HomeProyectsDisplayLayout>
         </HomeLayout>
