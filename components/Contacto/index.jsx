@@ -1,7 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Formulario from '../ui/Form';
+
+import { ContactoForm, ContactoInfo, ContactoLayout, } from './contactoElements';
 
 const Contacto = () => {
-    return ( <h1>contacto</h1> );
+    return ( 
+        <ContactoLayout>
+            <ContactoInfo>
+                
+            </ContactoInfo>
+            <ContactoForm>
+                <Formulario />
+            </ContactoForm>
+        </ContactoLayout>
+    );
 }
  
 export default Contacto;
