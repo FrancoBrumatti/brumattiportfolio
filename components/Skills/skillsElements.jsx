@@ -16,6 +16,7 @@ export const SkillsContent = styled.div`
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0 4rem;
+    overflow-y: auto;
 `;
 
 export const Skill = styled.div`
@@ -26,5 +27,10 @@ export const Skill = styled.div`
 
     img {
         width: 256px;
+        border-radius: 1rem;
+    }
+
+    h2 {
+        color: var(--brighter);
     }
 `;

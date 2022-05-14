@@ -8,12 +8,9 @@ import { Skill, SkillsContent, SkillsLayout } from './skillsElements';
 
 
 const Skills = () => {
-
-
-
     return ( 
        <SkillsLayout>
-           <h1>{skillsData.skillstitle}</h1>
+           <h1>{skillsData.title}</h1>
            <SkillsContent>
                 {skillsData.skills.map(skill => 
                     <Skill key={skill.id}>

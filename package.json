@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "babel-plugin-styled-components": "^2.0.7",
+    "formik": "^2.2.9",
     "framer-motion": "^6.3.2",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "eslint": "8.12.0",

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const HomeLayout = styled.div`
     display: grid;
@@ -107,7 +108,7 @@ export const HomeDescription = styled.p`
     }
 `;
 
-export const HomeProyect = styled.div`
+export const HomeProyect = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: flex-end;

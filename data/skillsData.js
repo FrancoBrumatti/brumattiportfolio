@@ -1,5 +1,5 @@
 export const skillsData = {
-    "skillstitle": "Mis Skills",
+    "title": "Mis Skills",
     "skills": [
         {
             "id": 0,

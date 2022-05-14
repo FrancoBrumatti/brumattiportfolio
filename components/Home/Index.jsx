@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 //data
 import { homeData } from '../../data/homeData';
@@ -9,10 +8,9 @@ import { HomeLayout, HomeInfo, HomeCVButton, HomeDescription, HomeProyectsDispla
 
 const Home = () => {
 
+    //destructuring data
     const { homeinfo } = homeData;
     const { homeprojects } = homeData;
-
-    console.log(homeprojects)
 
     return ( 
         <HomeLayout>
@@ -27,7 +25,7 @@ const Home = () => {
                 <h1>{homeprojects.projectstitle}</h1>
                 <HomeProyectsDisplay>
                     {homeprojects.projects.map(project => 
-                    <motion.div
+                    <HomeProyect
                         initial={{
                             scale: 1,
                             borderRadius: '1rem',
@@ -37,11 +35,11 @@ const Home = () => {
                             boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
                         }}
                         transition= {{ duration: .8 }}
-                    >
-                        <HomeProyect image={project.projectimage}>
-                            <h2>{project.projecttitle}</h2>
-                        </HomeProyect>
-                    </motion.div>    
+                        image={project.image}
+                        key={project.id}
+                    > 
+                            <h2>{project.title}</h2> 
+                    </HomeProyect>    
                     )}
                 </HomeProyectsDisplay>
             </HomeProyectsDisplayLayout>

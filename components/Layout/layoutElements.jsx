@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const AppBackground = styled.div`
     height: 90vh;
@@ -23,7 +24,7 @@ export const LayoutNavbarContainer = styled.div`
     width: 100%;
 `;
 
-export const LayoutContentContainer = styled.div`
+export const LayoutContentContainer = styled(motion.main)`
     height: 100%;
     overflow: auto;
     scroll-behavior: auto;

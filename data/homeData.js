@@ -10,16 +10,16 @@ export const homeData = {
         "projectstitle": "Mis Proyectos",
         "projects": [
             {
-                "projectid": 0,
-                "projecttitle": "Titulo del proyecto",
-                "projectimage": "/fotoproyecto.jpg",
-                "projecturl": "buscadorimagenesproject.netlify.app"
+                "id": 0,
+                "title": "Titulo del proyecto",
+                "image": "/fotoproyecto.jpg",
+                "url": "buscadorimagenesproject.netlify.app"
             },
             {
-                "projectid": 1,
-                "projecttitle": "Titulo del proyecto",
-                "projectimage": "/fotoproyecto.jpg",
-                "projecturl": "buscadorimagenesproject.netlify.app"
+                "id": 1,
+                "title": "Titulo del proyecto",
+                "image": "/fotoproyecto.jpg",
+                "url": "buscadorimagenesproject.netlify.app"
             }
         ]
     }
