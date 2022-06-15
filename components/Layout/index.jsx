@@ -1,5 +1,8 @@
 import React from 'react';
 
+//animation
+import Animation from '../ui/Animation';
+
 //styles
 import { LayoutContainer, LayoutContentContainer } from './layoutElements';
 
@@ -10,10 +13,14 @@ const Layout = (props) => {
     return (
         <>
                 <LayoutContainer>
-                    <Navbar />
-                    <LayoutContentContainer>
-                        {props.children}
-                    </LayoutContentContainer>
+                        {/* <Animation direction={'vertical'}> */}
+                        <Navbar />
+                        {/* </Animation> */}
+                        <LayoutContentContainer>
+                            {/* <Animation direction={'horizontal'}> */}
+                                {props.children}
+                            {/* </Animation> */}
+                        </LayoutContentContainer>
                 </LayoutContainer> 
         </>  
     );

@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const NavbarContainer = styled.div`
     position: sticky;
+    z-index: 9999;
     top: 0;
     width: 100%;
+    height: 8rem;
     
     display: flex;
     flex-direction: column;
@@ -11,9 +13,10 @@ export const NavbarContainer = styled.div`
     align-items: center;
 
     border-bottom: 2px solid var(--primary);
-    background: radial-gradient(circle, rgba(69,39,160,0.95) 15%, rgba(46,26,107,0.9) 100%);
+    background: radial-gradient(circle, rgba(69,39,160,0.98) 15%, rgba(46,26,107,0.95) 100%);
 
     @media (min-width: 1024px) {
+        height: 5rem;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -22,8 +25,6 @@ export const NavbarContainer = styled.div`
 export const NavbarTitle = styled.a`
     color: var(--white);
     font-weight: bolder;
-    margin-left: 1rem;
-    padding: .8rem 1rem;
     border-radius: .5rem;
 
     transition: all .3s;
@@ -31,6 +32,11 @@ export const NavbarTitle = styled.a`
     &:hover {
         cursor: pointer;
         color: var(--brighter);
+    }
+
+    @media (min-width: 1024px) {
+        margin-left: 1rem;
+        padding: .8rem 1rem;
     }
 `;
 

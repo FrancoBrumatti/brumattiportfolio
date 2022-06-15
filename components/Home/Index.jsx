@@ -4,7 +4,7 @@ import React from 'react';
 import { homeData } from '../../data/homeData';
 
 //styles
-import { HomeLayout, HomeInfo, HomeCVButton, HomeDescription, HomeProyectsDisplayLayout, HomeProyectsDisplay, HomeProyect } from './homeElements';
+import { HomeLayout, HomeInfo, HomeInfoCVButton, HomeDescription, HomeProyectsDisplayLayout, HomeProyectsDisplay, HomeProyect, HomeInfoText } from './homeElements';
 
 const Home = () => {
 
@@ -16,10 +16,12 @@ const Home = () => {
         <HomeLayout>
             <HomeInfo>
                 <img src={homeinfo.infoprofileimage} alt="profile photo" />
-                <h1>{homeinfo.infotitle}</h1>
-                <HomeCVButton>{homeinfo.infobutton}</HomeCVButton>
-                <HomeDescription>{homeinfo.infodescription}</HomeDescription>
-                <HomeDescription>{homeinfo.infodescription2}</HomeDescription>
+                <HomeInfoText>
+                    <h1>{homeinfo.infotitle}</h1>
+                    <HomeDescription>{homeinfo.infodescription}</HomeDescription>
+                    <HomeDescription>{homeinfo.infodescription2}</HomeDescription>
+                    <HomeInfoCVButton>{homeinfo.infobutton}</HomeInfoCVButton>
+                </HomeInfoText>
             </HomeInfo>
             <HomeProyectsDisplayLayout>
                 <h1>{homeprojects.projectstitle}</h1>
@@ -34,7 +36,7 @@ const Home = () => {
                             scale: 1.05,
                             boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
                         }}
-                        transition= {{ duration: .8 }}
+                        transition= {{ duration: .4 }}
                         image={project.image}
                         key={project.id}
                     > 

@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const SkillsLayout = styled.div`
     height: 100%;
+    margin: 2rem;
     text-align: center;
+    border-radius: 1rem;
     
     h1 {
         padding: 2rem;
-        color: var(--brighter);
+        color: var(--white);
     }
 `;
 
@@ -15,7 +17,7 @@ export const SkillsContent = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 0 4rem;
+    padding: 2rem;
     overflow-y: auto;
 `;
 
@@ -24,6 +26,9 @@ export const Skill = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--brighter);
+    border-radius: 1rem;
+    padding: 1rem;
 
     img {
         width: 256px;
@@ -31,6 +36,6 @@ export const Skill = styled.div`
     }
 
     h2 {
-        color: var(--brighter);
+        color: var(--black);
     }
 `;
