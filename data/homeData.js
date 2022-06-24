@@ -50,6 +50,12 @@ export const homeData = {
                 "title": "Calculadora de presupuesto",
                 "image": "/calculadorapresupuesto.png",
                 "url": "https://calcularpresupuestoreact.netlify.app/"
+            },
+            {
+                "id": 7,
+                "title": "Crypto Cotizador",
+                "image": "/cryptocotizador.png",
+                "url": "https://cryptocotizadorfb.netlify.app/"
             }
         ]
     }

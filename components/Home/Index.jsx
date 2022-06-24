@@ -14,7 +14,11 @@ const Home = () => {
 
     return ( 
         <HomeLayout>
-            <HomeInfo>
+            <HomeInfo
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: .5 }}
+            >
                 <img src={homeinfo.infoprofileimage} alt="profile photo" />
                 <HomeInfoText>
                     <h1>{homeinfo.infotitle}</h1>
@@ -23,25 +27,38 @@ const Home = () => {
                     <HomeInfoCVButton>{homeinfo.infobutton}</HomeInfoCVButton>
                 </HomeInfoText>
             </HomeInfo>
-            <HomeProyectsDisplayLayout>
+            <HomeProyectsDisplayLayout
+                initial={{ y: -30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: .5 }}
+            >
                 <h1>{homeprojects.projectstitle}</h1>
-                <HomeProyectsDisplay>
+                <HomeProyectsDisplay
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: .5, delay: .3 }}
+                >
                     {homeprojects.projects.map(project => 
-                    <HomeProyect
-                        initial={{
-                            scale: 1,
-                            borderRadius: '1rem',
-                        }}
-                        whileHover={{
-                            scale: 1.05,
-                            boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
-                        }}
-                        transition= {{ duration: .4 }}
-                        image={project.image}
-                        key={project.id}
-                    > 
-                            <h2>{project.title}</h2> 
-                    </HomeProyect>    
+                        <HomeProyect
+                            initial={{
+                                scale: 1,
+                                borderRadius: '1rem',
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity: 1
+                            }}
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
+                            }}
+                            transition= {{ duration: .4, delay: .5 }}
+                            image={project.image}
+                            key={project.id}
+                            href={project.url}
+                        > 
+                                <h2>{project.title}</h2> 
+                        </HomeProyect>    
                     )}
                 </HomeProyectsDisplay>
             </HomeProyectsDisplayLayout>

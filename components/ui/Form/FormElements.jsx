@@ -30,7 +30,7 @@ export const FormInput = styled(Field)`
   font-family: var(--fontsecondary);
 
   &::placeholder {
-    color: var(--darker);
+    color: var(--background);
   }
 `;
 
@@ -43,27 +43,25 @@ export const FormTextArea = styled.textarea`
   background-color: var(--white);
 
   &::placeholder {
-    color: var(--darker);
+    color: var(--background);
   }
 `;
 
 export const FormSubmit = styled.input`
   margin-top: 1.5rem;
-  border: 1px solid var(--darker);
+  border: 1px solid var(--brighter);
   border-radius: 0.6rem;
-  background-color: var(--white) !important;
-  color: var(--darker);
+  background-color: var(--white);
+  color: var(--black);
   font-size: bold;
   font-family: var(--fontprimary);
   min-width: 10rem;
   align-self: center;
   padding: 1rem;
-  transition: all 0.3s ease-in-out;
 
   &:hover {
+    filter: brightness(1.05);
     cursor: pointer;
-    background-color: var(--black);
-    transform: scale(1.02);
   }
 `;
 

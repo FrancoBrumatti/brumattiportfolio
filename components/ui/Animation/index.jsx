@@ -12,7 +12,7 @@ const Animation = (props) => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: .5,
+        duration: .3,
         delay: 0.3,
       },
     });

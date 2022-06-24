@@ -14,9 +14,10 @@ export const HomeLayout = styled.div`
     }
 `;
 
-export const HomeProyectsDisplayLayout = styled.div`
+export const HomeProyectsDisplayLayout = styled(motion.div)`
     display: block;
     padding: 0;
+    max-height: 60rem;
     overflow-y: auto;
 
     &::-webkit-scrollbar {
@@ -42,13 +43,13 @@ export const HomeProyectsDisplayLayout = styled.div`
         background-color: var(--background);
         color: var(--brighter);
 
-        box-shadow: 0px 0px 4px 2px var(--brighter);
-        -webkit-box-shadow: 0px 0px 4px 2px var(--brighter);
-        -moz-box-shadow: 0px 0px 4px 2px var(--brighter);
+        box-shadow: 0px 0px 4px 0px var(--primary);
+        -webkit-box-shadow: 0px 0px 4px 0px var(--primary);
+        -moz-box-shadow: 0px 0px 4px 0px var(--primary);
     }
 `;
 
-export const HomeProyectsDisplay = styled.div`
+export const HomeProyectsDisplay = styled(motion.div)`
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -57,7 +58,7 @@ export const HomeProyectsDisplay = styled.div`
     height: 100%;
 `;
 
-export const HomeInfo = styled.div`
+export const HomeInfo = styled(motion.div)`
     position: relative;
 
     display: flex;
@@ -147,13 +148,14 @@ export const HomeDescription = styled.p`
     }
 `;
 
-export const HomeProyect = styled(motion.div)`
+export const HomeProyect = styled(motion.a)`
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 12.5rem;
     height: 17.5rem;
     border-radius: 1rem;
+    text-decoration: none;
     
     background-image: linear-gradient(0deg, rgba(29,22,38,1) 0%, rgba(0,0,0,0) 100%), url(${props => props.image});
     background-size: cover;

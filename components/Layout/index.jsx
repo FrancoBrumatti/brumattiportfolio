@@ -13,13 +13,11 @@ const Layout = (props) => {
     return (
         <>
                 <LayoutContainer>
-                        {/* <Animation direction={'vertical'}> */}
-                        <Navbar />
-                        {/* </Animation> */}
+                        <Animation direction={'vertical'}> 
+                            <Navbar />
+                        </Animation> 
                         <LayoutContentContainer>
-                            {/* <Animation direction={'horizontal'}> */}
-                                {props.children}
-                            {/* </Animation> */}
+                            {props.children}
                         </LayoutContentContainer>
                 </LayoutContainer> 
         </>  
