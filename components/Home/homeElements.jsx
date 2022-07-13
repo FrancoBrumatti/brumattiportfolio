@@ -62,20 +62,20 @@ export const HomeInfo = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 
     img {
-        margin: 1rem;
-        width: 144px;
         border-radius: 50%;
+        width: 100%;
     }
 
     &::after{
         position: absolute;
         right: 0;
-        top: 0;
+        bottom: 0;
         content: '';
-        width: 1px;
-        height: 100%;
+        width: 100%;
+        height: 1px;
         border-radius: 50%;
         color: var(--brighter);
         background-color: var(--brighter);
@@ -83,17 +83,13 @@ export const HomeInfo = styled(motion.div)`
 
     @media (min-width: 768px) {
         flex-direction: row;
-
-        img {
-            width: 256px;
-        }
     }
 
     @media (min-width: 1024px) {
         flex-direction: column;
 
         &::after {
-            bottom: 0;
+            right: 0;
             height: 100%;
             width: 1px;
         }

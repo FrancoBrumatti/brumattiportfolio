@@ -20,7 +20,7 @@ const Home = () => {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: .5 }}
             >
-                <img src={homeinfo.infoprofileimage} alt="profile photo" />
+                <Image src={homeinfo.infoprofileimage} layout='fixed' width={250} height={250} alt="profile photo" />
                 <HomeInfoText>
                     <h1>{homeinfo.infotitle}</h1>
                     <HomeDescription>{homeinfo.infodescription}</HomeDescription>
@@ -56,8 +56,8 @@ const Home = () => {
                             key={project.id}
                             href={project.url}
                         >
-                                <Image src={project.image} layout='fill' /> 
-                                <h2>{project.title}</h2> 
+                            <Image src={project.image} layout='fill' /> 
+                            <h2>{project.title}</h2> 
                         </HomeProyect>    
                     )}
                 </HomeProyectsDisplay>
