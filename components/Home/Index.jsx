@@ -56,7 +56,7 @@ const Home = () => {
                             key={project.id}
                             href={project.url}
                         >
-                            <Image src={project.image} layout='fill' /> 
+                            <Image src={project.image} layout='fill' alt='project image'/> 
                             <h2>{project.title}</h2> 
                         </HomeProyect>    
                     )}

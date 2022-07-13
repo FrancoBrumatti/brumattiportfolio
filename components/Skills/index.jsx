@@ -24,7 +24,7 @@ const Skills = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: .3, duration: .3, type: 'easeout' }}
                     >
-                        <Image src={skill.image} layout='fixed' width={256} height={256} />
+                        <Image src={skill.image} layout='fixed' width={256} height={256} alt='skill image' />
                         <h2>{skill.title}</h2>
                     </Skill>    
                 )}
