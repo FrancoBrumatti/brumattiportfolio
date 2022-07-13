@@ -23,7 +23,6 @@ const Home = () => {
                 <HomeInfoText>
                     <h1>{homeinfo.infotitle}</h1>
                     <HomeDescription>{homeinfo.infodescription}</HomeDescription>
-                    <HomeDescription>{homeinfo.infodescription2}</HomeDescription>
                     <HomeInfoCVButton>{homeinfo.infobutton}</HomeInfoCVButton>
                 </HomeInfoText>
             </HomeInfo>
@@ -50,9 +49,9 @@ const Home = () => {
                             }}
                             whileHover={{
                                 scale: 1.05,
-                                boxShadow: '0px 0px 30px -5px rgba(255,255,255,0.5)',
+                                boxShadow: '0px 0px 30px -5px #ffffff',
                             }}
-                            transition= {{ duration: .4, delay: .5 }}
+                            transition= {{ duration: .4 }}
                             image={project.image}
                             key={project.id}
                             href={project.url}

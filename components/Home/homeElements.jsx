@@ -16,9 +16,10 @@ export const HomeLayout = styled.div`
 
 export const HomeProyectsDisplayLayout = styled(motion.div)`
     display: block;
-    padding: 0;
+    margin: 0 2rem;
     max-height: 60rem;
     overflow-y: auto;
+    background-color: rgba(0,0,0,.1);
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -38,14 +39,11 @@ export const HomeProyectsDisplayLayout = styled(motion.div)`
     h1 {
         z-index: 99999;
         position: sticky;
-        top: 0;
+        top: -1px;
         text-align: center;
         background-color: var(--background);
         color: var(--brighter);
-
-        box-shadow: 0px 0px 4px 0px var(--primary);
-        -webkit-box-shadow: 0px 0px 4px 0px var(--primary);
-        -moz-box-shadow: 0px 0px 4px 0px var(--primary);
+        border-bottom: 1px solid var(--primary);
     }
 `;
 

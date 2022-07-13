@@ -23,7 +23,7 @@ export const ContactoInfo = styled.div`
     color: var(--white);
 
     @media (min-width: 1024px) {
-        padding: 2rem 4rem;
+        padding: 4rem;
     }
 `;
 
@@ -55,7 +55,7 @@ export const ContactoDato = styled.div`
     width: 100%;
 
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     p {

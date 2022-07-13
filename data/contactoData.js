@@ -27,12 +27,6 @@ export const contactoData = {
             "info": "Rosario, Santa Fe, Argentina",
             "icon": <FiHome />
         },
-        {
-            "id": 4,
-            "title": "Documentos",
-            "info": "DNI: 41512547, Ciudadanía Italiana: ++++++++",
-            "icon": <FiBookOpen />
-        },
     ],
     "contactoRedes": [
         {

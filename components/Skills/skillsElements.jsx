@@ -4,11 +4,10 @@ import { motion } from 'framer-motion';
 export const SkillsLayout = styled(motion.div)`
     height: 100%;
     text-align: center;
-    border-radius: 1rem;
     overflow: hidden;
     
     h1 {
-        padding: 2rem;
+        padding: 1.3rem;
         color: var(--white);
 
         box-shadow: 0px 0px 4px 0px var(--primary);
@@ -24,7 +23,7 @@ export const SkillsContent = styled.div`
     gap: 1.5rem;
     padding: 2rem;
     overflow-y: auto;
-    height: calc(90vh - 8rem);
+    height: calc(85vh - 7rem);
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -41,8 +40,8 @@ export const SkillsContent = styled.div`
         border-radius: 4px;
     }
 
-    @media (max-height: 1024px) {
-        height: calc(90vh - 10rem);
+    @media (min-width: 1024px) {
+        height: calc(95vh - 8rem);
     }
 `;
 
