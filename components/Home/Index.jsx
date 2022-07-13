@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 //data
 import { homeData } from '../../data/homeData';
@@ -52,10 +53,10 @@ const Home = () => {
                                 boxShadow: '0px 0px 30px -5px #ffffff',
                             }}
                             transition= {{ duration: .4 }}
-                            image={project.image}
                             key={project.id}
                             href={project.url}
-                        > 
+                        >
+                                <Image src={project.image} layout='fill' /> 
                                 <h2>{project.title}</h2> 
                         </HomeProyect>    
                     )}

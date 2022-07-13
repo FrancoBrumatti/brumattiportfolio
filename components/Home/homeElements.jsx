@@ -147,18 +147,17 @@ export const HomeDescription = styled.p`
 `;
 
 export const HomeProyect = styled(motion.a)`
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 12.5rem;
     height: 17.5rem;
-    border-radius: 1rem;
     text-decoration: none;
-    
-    background-image: linear-gradient(0deg, rgba(29,22,38,1) 0%, rgba(0,0,0,0) 100%), url(${props => props.image});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    img {
+        border-radius: 1rem;
+    }
    
     h2 {
         color: var(--white);

@@ -55,7 +55,6 @@ export const Skill = styled(motion.div)`
     padding: 1rem;
 
     img {
-        width: 256px;
         border-radius: 1rem;
     }
 

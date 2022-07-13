@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 //data
 import { skillsData } from '../../data/skillsData';
@@ -23,7 +24,7 @@ const Skills = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: .3, duration: .3, type: 'easeout' }}
                     >
-                        <img src={skill.image} alt="imagen skills" />
+                        <Image src={skill.image} layout='fixed' width={256} height={256} />
                         <h2>{skill.title}</h2>
                     </Skill>    
                 )}

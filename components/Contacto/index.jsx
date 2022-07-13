@@ -23,7 +23,7 @@ const Contacto = () => {
                     )}
                     <ContactoRedes>
                             {contactoData.contactoRedes.map(red => 
-                                <Animation direction={'vertical'}>
+                                <Animation key={red.id} direction={'vertical'}>
                                     <a href={red.href}>{red.icon}</a>
                                 </Animation>
                             )}  
