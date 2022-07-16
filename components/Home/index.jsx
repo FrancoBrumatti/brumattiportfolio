@@ -24,8 +24,8 @@ const Home = () => {
                 <HomeInfoText>
                     <h1>{homeinfo.infotitle}</h1>
                     <HomeDescription>{homeinfo.infodescription}</HomeDescription>
-                    <HomeInfoCVButton>{homeinfo.infobutton}</HomeInfoCVButton>
                 </HomeInfoText>
+                <HomeInfoCVButton href='/cv.png' download={true}>{homeinfo.infobutton}</HomeInfoCVButton>
             </HomeInfo>
             <HomeProyectsDisplayLayout
                 initial={{ y: -30, opacity: 0 }}

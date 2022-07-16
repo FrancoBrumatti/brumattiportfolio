@@ -107,10 +107,11 @@ export const HomeInfoText = styled.div`
     }
 `;
 
-export const HomeInfoCVButton = styled.button`
+export const HomeInfoCVButton = styled.a`
     border-radius: 1rem;
-    margin-block: 1.5rem;
+    margin: 1rem 0;
     padding: 1rem;
+    text-decoration: none;
     font-weight: bolder;
     color: var(--black);
     background-color: var(--primary);
