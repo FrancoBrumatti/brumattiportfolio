@@ -2,13 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     :root {
-        --primary: #4527a0;
-        --secondary: #3D2645;
+        --primary: #331886;
+        --secondary: #4a22c2;
         --darker: #80283e;
-        --brighter: #7953d2;
-        --background: #1e193b;
-        --brighterSpan: #9f81e6;
-        --navbar: rgba(0, 0, 112, 0.85);
+        --textcolor: #271946;
+        --background: #8974ff;
+        --textcolorSpan: #382564;
+        --navbar: rgba(16, 16, 128, 0.85);
         --navbarDarker: rgba(0, 0, 112, 0.92);
         --black: #000000;
         --white: #e0e2f3;

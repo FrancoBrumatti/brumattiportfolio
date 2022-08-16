@@ -49,7 +49,7 @@ export const FormTextArea = styled.textarea`
 
 export const FormSubmit = styled.input`
   margin-top: 1.5rem;
-  border: 1px solid var(--brighter);
+  border: 1px solid var(--textcolor);
   border-radius: 0.6rem;
   background-color: var(--white);
   color: var(--black);

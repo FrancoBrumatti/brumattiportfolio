@@ -9,7 +9,7 @@ export const HomeLayout = styled.div`
     @media (min-width: 1024px) {
         grid-template-rows: auto;
         grid-template-columns: 17.5rem auto;
-        height: calc(100vh - 5rem);
+        height: calc(100vh - 10rem);
         padding: 1rem 0;
     }
 `;
@@ -27,12 +27,12 @@ export const HomeProyectsDisplayLayout = styled(motion.div)`
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: var(--brighter);
+        background-color: var(--textcolor);
         border-radius: 4px;
     }
 
     &::-webkit-scrollbar-track {
-        background-color: var(--primary);
+        background-color: var(--secondary);
         border-radius: 4px;
     }
 
@@ -42,7 +42,7 @@ export const HomeProyectsDisplayLayout = styled(motion.div)`
         top: -1px;
         text-align: center;
         background-color: var(--background);
-        color: var(--brighter);
+        color: var(--textcolor);
         border-bottom: 1px solid var(--primary);
     }
 `;
@@ -77,8 +77,8 @@ export const HomeInfo = styled(motion.div)`
         width: 100%;
         height: 1px;
         border-radius: 50%;
-        color: var(--brighter);
-        background-color: var(--brighter);
+        color: var(--textcolor);
+        background-color: var(--textcolor);
     }
 
     @media (min-width: 768px) {
@@ -87,6 +87,7 @@ export const HomeInfo = styled(motion.div)`
 
     @media (min-width: 1024px) {
         flex-direction: column;
+        padding: 0;
 
         &::after {
             right: 0;
@@ -98,10 +99,11 @@ export const HomeInfo = styled(motion.div)`
 
 export const HomeInfoText = styled.div`
     display: block;
+    flex: 1;
     text-align: center;
 
     h1 {
-        color: var(--brighter);
+        color: var(--textcolor);
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
@@ -118,28 +120,28 @@ export const HomeInfoCVButton = styled.a`
 
     transition: all 0.4s;
 
-    box-shadow: 0px 0px 10px 5px var(--brighter);
-    -webkit-box-shadow: 0px 0px 10px 5px var(--brighter);
-    -moz-box-shadow: 0px 0px 10px 5px var(--brighter);
+    box-shadow: 0px 0px 10px 5px var(--textcolor);
+    -webkit-box-shadow: 0px 0px 10px 5px var(--textcolor);
+    -moz-box-shadow: 0px 0px 10px 5px var(--textcolor);
 
     &:hover {
         cursor: pointer;
 
-        background-color: var(--brighter);
-        box-shadow: 0px 0px 20px 5px var(--brighter);
-        -webkit-box-shadow: 0px 0px 20px 5px var(--brighter);
-        -moz-box-shadow: 0px 0px 20px 5px var(--brighter);
+        background-color: var(--secondary);
+        box-shadow: 0px 0px 20px 5px var(--textcolor);
+        -webkit-box-shadow: 0px 0px 20px 5px var(--textcolor);
+        -moz-box-shadow: 0px 0px 20px 5px var(--textcolor);
     }
 `;
 
 export const HomeDescription = styled.p`
-    color: var(--brighter);
+    color: var(--textcolor);
     font-size: 1rem;
     text-align: center;
     margin-inline: 1rem;
 
     span {
-        color: var(--brighterSpan);
+        color: var(--textcolorSpan);
     }
 `;
 

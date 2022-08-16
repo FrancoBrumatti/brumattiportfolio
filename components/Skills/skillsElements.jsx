@@ -31,7 +31,7 @@ export const SkillsContent = styled.div`
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: var(--brighter);
+        background-color: var(--textcolor);
         border-radius: 4px;
     }
 
@@ -50,7 +50,7 @@ export const Skill = styled(motion.div)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--brighter);
+    background-color: var(--textcolor);
     border-radius: 1rem;
     padding: 1rem;
 

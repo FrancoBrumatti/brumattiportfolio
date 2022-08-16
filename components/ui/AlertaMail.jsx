@@ -7,7 +7,7 @@ const Alerta = styled.div`
     mailSentStatus ? '#38c438' : '#c03939'};
   padding: 1rem;
   border-radius: 0.7rem;
-  color: var(--brighter);
+  color: var(--textcolor);
   width: 100%;
 
   margin-top: 1rem;

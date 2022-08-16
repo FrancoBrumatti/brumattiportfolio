@@ -39,7 +39,7 @@ export const ContactoRedes = styled.div`
         transition: all .3s;
 
         &:hover {
-            color: var(--brighter);
+            color: var(--textcolor);
         }
     }
 
@@ -59,7 +59,7 @@ export const ContactoDato = styled.div`
     }
 
     p {
-        color: var(--brighter);
+        color: var(--textcolor);
     }
 
     @media (min-width: 1024px) {
