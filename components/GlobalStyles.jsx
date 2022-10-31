@@ -2,9 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     :root {
-        --primary: #331886;
+        --primary: #3209ad;
         --secondary: #4a22c2;
-        --darker: #80283e;
+        --darker: #5c1663;
         --textcolor: #271946;
         --background: #8974ff;
         --textcolorSpan: #382564;

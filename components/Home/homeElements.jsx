@@ -115,7 +115,7 @@ export const HomeInfoCVButton = styled.a`
     padding: 1rem;
     text-decoration: none;
     font-weight: bolder;
-    color: var(--black);
+    color: var(--white);
     background-color: var(--primary);
 
     transition: all 0.4s;

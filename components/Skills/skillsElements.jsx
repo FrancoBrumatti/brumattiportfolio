@@ -50,7 +50,7 @@ export const Skill = styled(motion.div)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--textcolor);
+    background-color: var(--primary);
     border-radius: 1rem;
     padding: 1rem;
 
@@ -59,6 +59,6 @@ export const Skill = styled(motion.div)`
     }
 
     h2 {
-        color: var(--black);
+        color: var(--white);
     }
 `;
