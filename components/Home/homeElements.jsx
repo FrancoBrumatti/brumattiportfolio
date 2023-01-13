@@ -9,7 +9,7 @@ export const HomeLayout = styled.div`
     @media (min-width: 1024px) {
         grid-template-rows: auto;
         grid-template-columns: 17.5rem auto;
-        height: calc(100vh - 10rem);
+        height: calc(100vh - 6rem);
         padding: 1rem 0;
     }
 `;
@@ -22,7 +22,7 @@ export const HomeProyectsDisplayLayout = styled(motion.div)`
     background-color: rgba(0,0,0,.1);
 
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 3px;
         height: 80%;
     }
 
@@ -32,7 +32,7 @@ export const HomeProyectsDisplayLayout = styled(motion.div)`
     }
 
     &::-webkit-scrollbar-track {
-        background-color: var(--secondary);
+        background-color: transparent;
         border-radius: 4px;
     }
 
