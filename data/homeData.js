@@ -18,7 +18,7 @@ export const homeData = {
                 "id": 1,
                 "title": "Fotografa Web",
                 "image": "/media/renatafotografa.png",
-                "url": "https://renatacaffaratti.netlify.app/"
+                "url": "https://portfoliorenata-xi.vercel.app/"
             },
             {
                 "id": 2,
