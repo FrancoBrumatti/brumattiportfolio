@@ -55,6 +55,12 @@ export const homeData = {
                 "title": "Crypto Cotizador",
                 "image": "/media/cryptocotizador.png",
                 "url": "https://cryptocotizadorfb.netlify.app/"
+            },
+            {
+                "id": 8,
+                "title": "Flor de Loto",
+                "image": "/media/flordeloto.png",
+                "url": "https://boisterous-dango-6bf529.netlify.app/"
             }
         ]
     }
