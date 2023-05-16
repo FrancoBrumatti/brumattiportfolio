@@ -105,7 +105,7 @@ export const HomeInfoText = styled.div`
     h1 {
         color: var(--textcolor);
         font-size: 1.6rem;
-        margin-bottom: 1rem;
+        margin: 1rem;
     }
 `;
 

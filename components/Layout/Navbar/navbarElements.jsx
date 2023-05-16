@@ -31,7 +31,7 @@ export const NavbarTitle = styled.a`
 
     &:hover {
         cursor: pointer;
-        color: var(--textcolor);
+        color: white;
     }
 
     @media (min-width: 1024px) {
@@ -55,7 +55,7 @@ export const NavbarLink = styled.div`
 
     &:hover {
         cursor: pointer;
-        color: var(--textcolor);
+        color: white;
     }
 
     &::after {
