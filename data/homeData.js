@@ -52,16 +52,22 @@ export const homeData = {
             },
             {
                 "id": 7,
-                "title": "Crypto Cotizador",
-                "image": "/media/cryptocotizador.png",
-                "url": "https://cryptocotizadorfb.netlify.app/"
+                "title": "Heels E-Commerce",
+                "image": "/media/heelsecommerce.png",
+                "url": "https://beauty360.vercel.app/"
             },
             {
                 "id": 8,
                 "title": "Flor de Loto",
                 "image": "/media/flordeloto.png",
                 "url": "https://boisterous-dango-6bf529.netlify.app/"
-            }
+            },
+            {
+                "id": 9,
+                "title": "Crypto Cotizador",
+                "image": "/media/cryptocotizador.png",
+                "url": "https://cryptocotizadorfb.netlify.app/"
+            },
         ]
     }
 }
