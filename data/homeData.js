@@ -60,7 +60,7 @@ export const homeData = {
                 "id": 8,
                 "title": "Flor de Loto",
                 "image": "/media/flordeloto.png",
-                "url": "https://boisterous-dango-6bf529.netlify.app/"
+                "url": "https://flordeloto-loveshop.com.ar/"
             },
             {
                 "id": 9,
