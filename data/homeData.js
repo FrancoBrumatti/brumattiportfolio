@@ -18,13 +18,13 @@ export const homeData = {
                 "id": 1,
                 "title": "Fotografa Web",
                 "image": "/media/renatafotografa.png",
-                "url": "https://portfoliorenata-xi.vercel.app/"
+                "url": "https://renataph.com/"
             },
             {
                 "id": 2,
                 "title": "Estudio Jurídico",
                 "image": "/media/estudiojuridico.png",
-                "url": "https://www.estudiointegralror.com/"
+                "url": "https://raquel-rios-abogada-git-main-francobrumatti.vercel.app/"
             },
             {
                 "id": 3,
